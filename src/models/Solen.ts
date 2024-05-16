@@ -1,4 +1,4 @@
-type Mars = {
+type Sol = {
     circumference: number,
     desc: string,
     distance: number,
@@ -12,4 +12,4 @@ type Mars = {
     type: string,
 }
 
-export default Mars;
+export default Sol;
