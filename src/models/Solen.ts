@@ -1,4 +1,4 @@
-type Sol = {
+type Solen = {
     circumference: number,
     desc: string,
     distance: number,
@@ -12,4 +12,4 @@ type Sol = {
     type: string,
 }
 
-export default Sol;
+export default Solen;
