@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import axios from "axios";
-import "./App.css"
+import "./App.css";
 
 function App() {
   const [data, setData] = useState('');
@@ -21,7 +21,7 @@ function App() {
     }).then(response1 => {
       setData(response1.data);
     })
-    .catch(error => console.log(error));
+      .catch(error => console.log(error));
   }, []);
 
   useEffect(() => {
@@ -30,7 +30,11 @@ function App() {
 
   return (
     <div className="app">
-      
+      {/* <Routes>
+
+        <Route path="/" element={<Planets AllPlanets={planetData} />} />
+        
+      </Routes> */}
     </div>
   );
 }
