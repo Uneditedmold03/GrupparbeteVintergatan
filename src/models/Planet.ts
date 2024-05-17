@@ -8,7 +8,8 @@ type Planet = {
     name: string,
     orbitalPeriod: number,
     rotation: number,
-    temp: {},
+    temp: { day: number,
+        night: number},
     type: string,
 }
 
