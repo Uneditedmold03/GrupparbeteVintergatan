@@ -1,38 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import axios from "axios";
-import "./App.css"
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+import './App.css'
+import keyType from './models/keyType'
+import bodiesType from './models/bodiesType'
+import planetType from './models/planetType'
+
 
 function App() {
-  const [data, setData] = useState('');
+  const [key, setKey] = useState<keyType | null>(null)
+  const [bodiesList, setBodiesList] = useState<bodiesType>()
 
   useEffect(() => {
-    axios.post("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys")
-      .then(response => {
-        setData(response.data);
-      })
-      .catch(error => console.log(error));
-  }, []);
-
-
-  useEffect(() => {
-    axios.get('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies', {
-      headers: { 'x-zocom': "solaris-7BTxHCyHhzIME5TI" }
-    }).then(response1 => {
-      setData(response1.data);
+    axios.post('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys')
+    .then(response => {
+      setKey(response.data)
     })
-    .catch(error => console.log(error));
-  }, []);
+  }, [])
 
   useEffect(() => {
-    console.log(data);
-  }, [data]);
+    if(key){
+      axios.get('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies', {
+        headers : { 'x-zocom' : key.key }
+      }).then(keyResponse => {
+        console.log(keyResponse.data)
+        setBodiesList(keyResponse.data)
+      })
+      .catch(error => console.log(error))
+    }
+  }, [key])
+
+  useEffect(() => {
+    if(bodiesList){
+      const planetList : planetType[] = [...bodiesList.bodies]
+      console.log(planetList)
+    }
+  }, [bodiesList])
 
   return (
-    <div className="app">
+    <div>
       
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
