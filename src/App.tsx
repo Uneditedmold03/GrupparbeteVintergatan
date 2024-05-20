@@ -7,7 +7,6 @@ import bodiesType from './models/bodiesType'
 import planetType from './models/planetType'
 import Planets from "./components/Planets/Planets"
 
-
 function App() {
   const [key, setKey] = useState<keyType | null>(null)
   const [bodiesList, setBodiesList] = useState<bodiesType>()
