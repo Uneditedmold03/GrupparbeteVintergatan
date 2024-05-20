@@ -3,9 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 import axios from "axios";
 import "./App.css";
 import Planets from "./components/Planets/Planets"
+import Planetdetails from './components/planetsdetails/PlanetDetails';
 
 function App() {
-  const [data, setData] = useState('');
+  const [data, setData] = useState([]);
   const [dataArray, setDataArray] = useState([]);
 
   useEffect(() => {
@@ -34,7 +35,8 @@ function App() {
     <div className="app">
       <Routes>
 
-        <Route path="/" element={<Planets planets={dataArray} />} />
+        <Route path="/" element={<Planets planets={data} />} />
+        <Route path="/test" element={<Planetdetails planets={data} />} />
         
       </Routes>
     </div>
