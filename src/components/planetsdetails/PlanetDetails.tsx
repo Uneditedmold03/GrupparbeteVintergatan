@@ -23,7 +23,10 @@ function Planetdetails({ planetList }: Props) {
   if(planet == undefined) return <h1>invalid planet id</h1>
 
   return (
+    <section className="swaws">
+    <h2>TEST</h2>
     <h1>{planet.name}</h1>
+    </section>
   )
 }
 
