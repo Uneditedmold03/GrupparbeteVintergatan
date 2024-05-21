@@ -12,8 +12,8 @@ function Planets({ planets }: Props) {
 
             <h1>Planets</h1>
             {
-                planets.map(planet => {
-                    return <p>{planet.name}</p>
+                planets.map((planet,index) => {
+                    return <p key={index}>{planet.name}</p>
                 })
             }
         </div>

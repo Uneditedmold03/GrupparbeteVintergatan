@@ -2,18 +2,17 @@ import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
-import keyType from './models/keyType';
-import planetType from './models/planetType';
+import Planet from "./models/Planet";
 import Planets from "./components/Planets/Planets";
 
 function App() {
-  const [key, setKey] = useState<keyType | null>(null);
-  const [planetList, setPlanetList] = useState<planetType[]>([]);
+  const [key, setKey] = useState<string>("");
+  const [planetList, setPlanetList] = useState<Planet[]>([]);
 
   useEffect(() => {
     axios.post('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys')
       .then(response => {
-        setKey(response.data);
+        setKey(response.data.key);
       })
       .catch(error => console.log(error));
   }, []);
@@ -21,7 +20,7 @@ function App() {
   useEffect(() => {
     if (key) {
       axios.get('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies', {
-        headers: { 'x-zocom': key.key }
+        headers: { 'x-zocom': key }
       })
         .then(response => {
           setPlanetList(response.data.bodies);
