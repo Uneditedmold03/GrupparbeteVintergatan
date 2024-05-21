@@ -90,7 +90,7 @@
 }
 
 .planetdetailsbackground {
-    background-color: darkblue;
+    background-color: #090931;
     background-image: url("./src/assets/star-transparent.png");
     background-size: contain;
     min-width: 100%;
@@ -100,10 +100,16 @@
 h1.text {
     font-size: xx-large;
     color: #dcdcdc;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     text-align: left;
 }
 
+h2.text {
+    font-size: xx-large;
+    color: #918021;
+    margin-bottom: 1rem;
+    text-align: left;
+}
 .planetinfo {
     color: #dcdcdc;
     padding-top: 6rem;
