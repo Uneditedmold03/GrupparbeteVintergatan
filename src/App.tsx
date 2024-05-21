@@ -1,21 +1,23 @@
-import { useState, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import axios from 'axios';
-import './App.css';
-import Planet from "./models/Planet";
-import Planets from "./components/Planets/Planets";
+import { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import axios from 'axios'
+import './App.css'
+import Planets from "./components/Planets/Planets"
+import Planetdetails from './components/planetsdetails/PlanetDetails'
+import Planet from "./models/Planet"
+
 
 function App() {
-  const [key, setKey] = useState<string>("");
-  const [planetList, setPlanetList] = useState<Planet[]>([]);
+  const [key, setKey] = useState<string>("")
+  const [planetList, setPlanetList] = useState<Planet[]>([])
+
 
   useEffect(() => {
     axios.post('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys')
-      .then(response => {
-        setKey(response.data.key);
-      })
-      .catch(error => console.log(error));
-  }, []);
+    .then(response => {
+      setKey(response.data.key)
+    })
+  }, [])
 
   useEffect(() => {
     if (key) {
