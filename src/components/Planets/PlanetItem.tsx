@@ -1,11 +1,11 @@
 import React from "react";
-import planetType from "../../models/planetType";
+import Planet from "../../models/Planet"
 import './PlanetItem.css'
 import { Link } from "react-router-dom";
 
 type Props = {
     cangeTitle: (newTitle: string) => void,
-    planet: planetType
+    planet: Planet
 }
 
 function PlanetItem({ cangeTitle, planet }: Props){

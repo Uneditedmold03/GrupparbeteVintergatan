@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import "./PlanetDetails.css"
-import planetType from '../../models/planetType'
+import Planet from "../../models/Planet"
 import { useParams } from 'react-router-dom'
 
 type Props = {
-  planetList: planetType[]
+  planetList: Planet[]
 }
 
 function Planetdetails({ planetList }: Props) {
-  const [planet, setPlanet] = useState<planetType | null>(null)
+  const [planet, setPlanet] = useState<Planet | null>(null)
   const { id } = useParams();
 
   useEffect(() => {

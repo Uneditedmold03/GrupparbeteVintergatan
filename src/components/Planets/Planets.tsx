@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import "./Planets.css"
-import planetType from '../../models/planetType'
+import Planet from "../../models/Planet"
 import PlanetItem from './PlanetItem'
 
 type Props = {
-    planets: planetType[]
+    planets: Planet[]
 }
 
 function Planets({ planets }: Props) {
