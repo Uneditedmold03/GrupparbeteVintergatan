@@ -5,6 +5,7 @@ import './App.css'
 import Planets from "./components/Planets/Planets"
 import Planetdetails from './components/planetsdetails/PlanetDetails'
 import Planet from "./models/Planet"
+import Favoriteplanet from './components/Favoriteplanet/Favoriteplanet'
 
 
 function App() {
