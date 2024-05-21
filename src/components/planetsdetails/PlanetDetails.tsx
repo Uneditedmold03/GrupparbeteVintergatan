@@ -12,21 +12,35 @@ function Planetdetails({ planetList }: Props) {
   const { id } = useParams();
 
   useEffect(() => {
-    if(id !== undefined){
+    if (id !== undefined) {
       const foundPlanet = planetList.find(pl => pl.id === parseInt(id))
-      if(foundPlanet !== undefined){
+      if (foundPlanet !== undefined) {
         setPlanet(foundPlanet)
       }
     }
   }, [])
 
-  if(planet == undefined) return <h1>invalid planet id</h1>
+  if (planet == undefined) return <h1>invalid planet id</h1>
 
   return (
-    <section className="swaws">
-    <h2>TEST</h2>
-    <h1>{planet.name}</h1>
+
+
+    <section className={`planetdetailsbackground`}>
+
+      <div className={`planetdetails planetdetails-${planet.name}`}>
+
+        <article className="planetinfo">
+        <h1 className="text">{planet.name}</h1>
+        <h2></h2>
+        <p>{planet.desc}</p>
+
+        </article>
+  
+      </div>
+
     </section>
+
+
   )
 }
 
