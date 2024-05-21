@@ -3,44 +3,17 @@
     align-items: center;
     justify-content: space-around;
     gap: 4%;
+    padding: .5rem;
 }
-.planet{
-    border-radius: 50%;
-    aspect-ratio: 1;
+.header-text{
+    font-size: xx-large;
+    color: rgb(220, 220, 220);
+    margin-bottom: 4rem;
+    text-align: center;
 }
-.planet-Solen{
-    background-color: yellow;
-    width: 23%;
-}
-.planet-Merkurius{
-    background-color: rgb(160, 160, 160);
-    width: 1.5%;
-}
-.planet-Venus{
-    background-color: rgb(207, 153, 153);
-    width: 2.2%;
-}
-.planet-Jorden{
-    background-color: rgb(23, 151, 255);
-    width: 4.5%;
-}
-.planet-Mars{
-    background-color: rgb(231, 49, 49);
-    width: 3.6%;
-}
-.planet-Jupiter{
-    background-color: rgb(227, 106, 25);
-    width: 12%;
-}
-.planet-Saturnus{
-    background-color: rgb(177, 145, 84);
-    width: 9.6%;
-}
-.planet-Uranus{
-    background-color: rgb(134, 162, 179);
-    width: 8.4%;
-}
-.planet-Neptunus{
-    background-color: rgb(63, 99, 119);
-    width: 7%;
+.backgrund{
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
 }

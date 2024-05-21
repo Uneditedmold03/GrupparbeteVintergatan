@@ -11,7 +11,7 @@ type planetType = {
     distance: number,
     orbitalPeriod: number,
     desc: string,
-    moons?: string[]
+    moons: string[] | undefined
 }
 
 export default planetType;
