@@ -1,36 +1,113 @@
-.planet-Solen{
-    background-color: yellow;
-    width: 23%;
+.planetdetails-Solen {
+    /* background-color: yellow; */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #f0bb0fFF 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
-.planet-Merkurius{
-    background-color: rgb(160, 160, 160);
-    width: 1.5%;
+
+.planetdetails-Merkurius {
+    /* background-color: rgb(160, 160, 160); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #85807dFF 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
+
 }
-.planet-Venus{
-    background-color: rgb(207, 153, 153);
-    width: 2.2%;
+
+.planetdetails-Venus {
+    /* background-color: rgb(207, 153, 153); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #f7945aFF 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
-.planet-Jorden{
-    background-color: rgb(23, 151, 255);
-    width: 4.5%;
+
+.planetdetails-Jorden {
+    /* background-color: rgb(23, 151, 255); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #2564D4FF 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
-.planet-Mars{
-    background-color: rgb(231, 49, 49);
-    width: 3.6%;
+
+.planetdetails-Mars {
+    /* background-color: rgb(231, 49, 49); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #e24f14FF 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
-.planet-Jupiter{
-    background-color: rgb(227, 106, 25);
-    width: 12%;
+
+.planetdetails-Jupiter {
+    /* background-color: rgb(227, 106, 25); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #d48253 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
-.planet-Saturnus{
-    background-color: rgb(177, 145, 84);
-    width: 9.6%;
+
+.planetdetails-Saturnus {
+    /* background-color: rgb(177, 145, 84); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #aa9068 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
-.planet-Uranus{
-    background-color: rgb(134, 162, 179);
-    width: 8.4%;
+
+.planetdetails-Uranus {
+    /* background-color: rgb(134, 162, 179); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #4975a7 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
-.planet-Neptunus{
-    background-color: rgb(63, 99, 119);
-    width: 7%;
+
+.planetdetails-Neptunus {
+    /* background-color: rgb(63, 99, 119); */
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(50% 100% at -10% 50%, #29517e 48%, #3068D000 57%);
+    min-width: 100%;
+    min-height: 100vh;
+
 }
+
+.planetdetailsbackground {
+    background-color: darkblue;
+    background-image: url("./src/assets/star-transparent.png");
+    background-size: contain;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+/* h1.text {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+} */
+
+.planetinfo {
+    padding: 3rem;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
