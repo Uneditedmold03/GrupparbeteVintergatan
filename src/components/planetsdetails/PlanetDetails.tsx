@@ -30,4 +30,5 @@ function Planetdetails({ planetList }: Props) {
   )
 }
 
-export default Planetdetails
+
+export default Planetdetails;
