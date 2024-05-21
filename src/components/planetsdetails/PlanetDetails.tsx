@@ -31,7 +31,6 @@ function Planetdetails({ planetList }: Props) {
 
         <article className="planetinfo">
         <h1 className="text">{planet.name}</h1>
-        <h2></h2>
         <p>{planet.desc}</p>
 
         </article>
