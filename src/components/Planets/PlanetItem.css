@@ -1,3 +1,7 @@
+.planet{
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
 .planet-Solen{
     background-color: yellow;
     width: 23%;
