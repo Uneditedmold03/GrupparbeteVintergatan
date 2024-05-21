@@ -5,8 +5,7 @@ import { useParams } from 'react-router-dom'
 
 type Props = {
   planetList: Planet[]
-}
-
+}                                
 function Planetdetails({ planetList }: Props) {
   const [planet, setPlanet] = useState<Planet | null>(null)
   const { id } = useParams();
@@ -17,6 +16,7 @@ function Planetdetails({ planetList }: Props) {
       if (foundPlanet !== undefined) {
         setPlanet(foundPlanet)
       }
+      
     }
   }, [])
 
@@ -53,6 +53,7 @@ function Planetdetails({ planetList }: Props) {
           <hr />
           <br />
 
+          
           <aside className="infobox">
             <h3 className="text">MÅNAR</h3>
             <h3></h3>
