@@ -90,7 +90,7 @@
 }
 
 .planetdetailsbackground {
-    background-color: darkblue;
+    background-color: rgb(17, 17, 17);
     background-image: url("./src/assets/star-transparent.png");
     background-size: contain;
     min-width: 100%;
@@ -102,12 +102,16 @@
     text-align: center;
     justify-content: center;
 } */
-
+.grid{
+    margin: auto;
+    max-width: 70%;
+    padding-top: 3rem;
+}
 .planetinfo {
+    background-color: rgba(52, 52, 52, 0.35);
+    color: rgb(192, 192, 192);
     padding: 3rem;
-    display:flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
