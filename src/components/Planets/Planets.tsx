@@ -10,7 +10,7 @@ type Props = {
 function Planets({ planets }: Props) {
     const [title, setTitle] = useState('Solaris Space Center')
 
-    function cangeTitle(newTitle : string){
+    function changeTitle(newTitle : string){
         setTitle(newTitle)
     }
 
@@ -20,7 +20,7 @@ function Planets({ planets }: Props) {
             <article className='planet-list'>
             {
                 planets.map(planet => {
-                    return <PlanetItem key={planet.id} cangeTitle={cangeTitle} planet={planet}/>
+                    return <PlanetItem key={planet.id} changeTitle={changeTitle} planet={planet}/>
                 })
             }
             </article>

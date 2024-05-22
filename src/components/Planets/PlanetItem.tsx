@@ -4,15 +4,15 @@ import './PlanetItem.css'
 import { Link } from "react-router-dom";
 
 type Props = {
-    cangeTitle: (newTitle: string) => void,
+    changeTitle: (newTitle: string) => void,
     planet: Planet
 }
 
-function PlanetItem({ cangeTitle, planet }: Props){
+function PlanetItem({ changeTitle, planet }: Props){
     return(
         <Link to={'/planet/details/' + planet.id} className={`planet-${planet.name} planet`} 
-        onMouseLeave={() => cangeTitle('Solaris Space Center')} 
-        onMouseOver={() => cangeTitle(planet.name)}>
+        onMouseLeave={() => changeTitle('Solaris Space Center')} 
+        onMouseOver={() => changeTitle(planet.name)}>
             <div ></div></Link>
     )
 }

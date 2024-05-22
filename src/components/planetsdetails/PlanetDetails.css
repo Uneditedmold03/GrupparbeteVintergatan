@@ -90,28 +90,63 @@
 }
 
 .planetdetailsbackground {
-    background-color: rgb(17, 17, 17);
+    background-color: #090931;
     background-image: url("./src/assets/star-transparent.png");
     background-size: contain;
     min-width: 100%;
     min-height: 100vh;
 }
 
-/* h1.text {
-    display:flex;
-    text-align: center;
-    justify-content: center;
-} */
-.grid{
-    margin: auto;
-    max-width: 70%;
-    padding-top: 3rem;
+h1.text {
+    font-size: xx-large;
+    color: #dcdcdc;
+    margin-bottom: 1rem;
+    text-align: left;
 }
+
+h2.text {
+    font-size: x-large;
+    color: #918021;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+h3.text {
+    margin-left: 0.5rem;
+    font-size: large;
+    color: #dcdcdc;
+    margin-top: 1rem;
+} 
+
+p {
+    margin: 0.5rem;
+    justify-content: start;
+}
+
+.moons {
+    text-align: start;
+}
+
+.infobox {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left; */
+}
+
+
 .planetinfo {
-    background-color: rgba(52, 52, 52, 0.35);
-    color: rgb(192, 192, 192);
-    padding: 3rem;
+    color: #dcdcdc;
+    padding-top: 2.5rem;
+    margin: auto;
+    max-width: 45%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
