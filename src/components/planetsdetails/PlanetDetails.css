@@ -138,6 +138,10 @@ p {
     text-align: left; */
 }
 
+.info-box-btn{
+    display: flex;
+    justify-content: space-between;
+}
 
 .planetinfo {
     color: #dcdcdc;

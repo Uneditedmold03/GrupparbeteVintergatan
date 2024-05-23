@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Planets.css"
 import Planet from "../../models/Planet"
 import PlanetItem from './PlanetItem'
+import { Link } from 'react-router-dom'
 
 type Props = {
     planets: Planet[]
@@ -15,6 +16,7 @@ function Planets({ planets }: Props) {
     }
 
     return (
+        <>
         <section className='backgrund'>
             <h1 className='header-text'>{title}</h1>
             <article className='planet-list'>
@@ -25,6 +27,11 @@ function Planets({ planets }: Props) {
             }
             </article>
         </section>
+
+        <footer className='footer'>
+            <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+        </footer>
+        </>
     )
 }
 
