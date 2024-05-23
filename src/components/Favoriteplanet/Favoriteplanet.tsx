@@ -4,7 +4,6 @@ import "./Favoriteplanet.css"
 
 function Favoriteplanet() {
 
-<<<<<<< HEAD
   return (
     <article className="favorite-page">
       <section className='favorite-test'>
@@ -19,12 +18,6 @@ function Favoriteplanet() {
     </article>
   )
   
-=======
-    return (
-        <div>Favoriteplanet</div>
-    )
-
->>>>>>> CJ
 }
 
 export default Favoriteplanet;

@@ -8,11 +8,11 @@ type Props = {
     planet: Planet
 }
 
-function PlanetItem({ changeTitle, planet }: Props){
-    return(
-        <Link to={'/planet/details/' + planet.id} className={`planet-${planet.name} planet`} 
-        onMouseLeave={() => changeTitle('Solaris Space Center')} 
-        onMouseOver={() => changeTitle(planet.name)}>
+function PlanetItem({ changeTitle, planet }: Props) {
+    return (
+        <Link to={'/planet/details/' + planet.id} className={`planet-${planet.name} planet`}
+            onMouseLeave={() => changeTitle('Solaris Space Center')}
+            onMouseOver={() => changeTitle(planet.name)}>
             <div ></div></Link>
     )
 }
