@@ -11,7 +11,7 @@ type Props = {
 function Planets({ planets }: Props) {
     const [title, setTitle] = useState('Solaris Space Center')
 
-    function changeTitle(newTitle : string){
+    function changeTitle(newTitle: string) {
         setTitle(newTitle)
     }
 
@@ -20,17 +20,17 @@ function Planets({ planets }: Props) {
         <section className='backgrund'>
             <h1 className='header-text'>{title}</h1>
             <article className='planet-list'>
-            {
-                planets.map(planet => {
-                    return <PlanetItem key={planet.id} changeTitle={changeTitle} planet={planet}/>
-                })
-            }
+                {
+                    planets.map(planet => {
+                        return <PlanetItem key={planet.id} changeTitle={changeTitle} planet={planet} />
+                    })
+                }
             </article>
         </section>
 
-        <footer className='footer'>
+        {/* <footer className='footer'>
             <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
-        </footer>
+        </footer> */}
         </>
     )
 }

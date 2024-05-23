@@ -116,7 +116,7 @@ h3.text {
     font-size: large;
     color: #dcdcdc;
     margin-top: 1rem;
-} 
+}
 
 p {
     margin: 0.5rem;
@@ -128,7 +128,7 @@ p {
 }
 
 .infobox {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
 
@@ -154,3 +154,25 @@ p {
     justify-content: center;
 }
 
+.planetinfo {
+    color: #dcdcdc;
+    padding-top: 6rem;
+    /* padding-left: 22rem;
+    padding-right: 20rem; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    border-color: rgb(214, 214, 214);
+    color: azure;
+    background-color: #090931;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #515151;
+}

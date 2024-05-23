@@ -1,17 +1,19 @@
-.planet-list{
+.planet-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 4%;
     padding: .5rem;
 }
-.header-text{
+
+.header-text {
     font-size: xx-large;
     color: rgb(220, 220, 220);
     margin-bottom: 4rem;
     text-align: center;
 }
-.backgrund{
+
+.backgrund {
     /* background-color: rgb(36, 36, 36); */
     background-image: url("./src/assets/star-transparent.png");
     background-color: #090931;
