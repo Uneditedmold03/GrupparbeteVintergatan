@@ -37,6 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Planets planets={planetList} />} />
         <Route path="/planet/details/:id" element={<Planetdetails  planetList={planetList} />} />
+        <Route path="/favorite/planets" element={<Favoriteplanet />} />
       </Routes>
     </div>
   );
