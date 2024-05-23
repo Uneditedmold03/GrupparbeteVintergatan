@@ -1,23 +1,21 @@
-import React, { useState } from 'react'
-import Planet from "../../models/Planet"
-import "./Favoriteplanet.css"
+import React from 'react';
+import Planet from "../../models/Planet";
 
-function Favoriteplanet() {
+type Props = {
+  favoritePlanets: Planet[]
+};
 
+function Favoriteplanet({ favoritePlanets }: Props) {
   return (
-    <article className="favorite-page">
-      <section className='favorite-test'>
-        <h1>test planet #1</h1>
-        <button>remove planet</button>
-      </section>
-      
-      <fieldset>
-        <legend><h1>test planet #3</h1></legend>
-        <button>remove planet</button>
-      </fieldset>
-    </article>
-  )
-  
+    <div>
+      <h1>Favorite Planets</h1>
+      <ul>
+        {favoritePlanets.map(planet => (
+          <li key={planet.id}>{planet.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default Favoriteplanet;
