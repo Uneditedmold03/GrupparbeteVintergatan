@@ -11,6 +11,19 @@ import Favoriteplanet from './components/Favoriteplanet/Favoriteplanet'
 function App() {
   const [key, setKey] = useState<string>("")
   const [planetList, setPlanetList] = useState<Planet[]>([])
+  const [favoriteList, setFavoriteList] = useState<Planet[]>([])
+
+  function toggleFavoriteList(id : number){
+    if(favoriteList.some(pl => pl.id == id)){
+      const newFavoriteList = favoriteList.filter(pl => pl.id !== id)
+      setFavoriteList(newFavoriteList)
+    } else {
+      setFavoriteList(fl => {
+        const foundPlanet = planetList.find(pl => pl.id == id)
+        return foundPlanet ? [...fl, foundPlanet] : fl
+      })
+    }
+  }
 
 
   useEffect(() => {
@@ -36,8 +49,11 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<Planets planets={planetList} />} />
-        <Route path="/planet/details/:id" element={<Planetdetails  planetList={planetList} />} />
-        <Route path="/favorite/planets" element={<Favoriteplanet />} />
+        <Route path="/planet/details/:id" element={<Planetdetails 
+                                          planetList={planetList} 
+                                          toggleFavoriteList={toggleFavoriteList}/>} />
+
+        <Route path="/favorite/planets" element={<Favoriteplanet favoriteList={favoriteList} />} />
       </Routes>
     </div>
   );
