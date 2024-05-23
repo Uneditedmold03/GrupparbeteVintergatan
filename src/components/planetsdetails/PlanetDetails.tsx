@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./PlanetDetails.css"
 import Planet from "../../models/Planet"
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 type Props = {
   planetList: Planet[]
@@ -24,13 +24,17 @@ function Planetdetails({ planetList }: Props) {
 
   return (
 
-
     <section className={`planetdetailsbackground`}>
 
       <div className={`planetdetails planetdetails-${planet.name}`}>
 
         <article className="planetinfo">
-          <h1 className="text">{planet.name}</h1>
+          {/* <h1 className="text">{planet.name}</h1> */}
+          <aside className="info-box-btn">
+            <h1 className="text">{planet.name}</h1>
+            <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+          </aside>
+
           <h2 className="text">{planet.latinName}</h2>
           <p>{planet.desc}</p>
           <br />
@@ -52,7 +56,6 @@ function Planetdetails({ planetList }: Props) {
           <hr />
           <br />
 
-
           <aside className="infobox">
             <h3 className="text">MÅNAR</h3>
             <h3></h3>
@@ -64,10 +67,9 @@ function Planetdetails({ planetList }: Props) {
 
         </article>
 
-      </div>
+        </div>
 
-    </section>
-
+    </section >
 
   )
 }

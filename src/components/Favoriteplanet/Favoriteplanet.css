@@ -1,4 +1,10 @@
+.favorite-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .favorite-test{
+    display: inline-block;
     border: 1px solid black;
     margin: 1rem;
     padding: 1rem;
