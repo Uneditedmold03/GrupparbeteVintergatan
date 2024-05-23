@@ -1,20 +1,29 @@
 import React, { useState } from 'react'
 import Planet from "../../models/Planet"
 import "./Favoriteplanet.css"
+import FavoriteplanetItem from './FavoriteplanetItem'
 
-function Favoriteplanet() {
+type Props = {
+  favoriteList: Planet[]
+}
+
+function Favoriteplanet({ favoriteList }: Props) {
+
+  if(favoriteList.length == 0){
+    return(
+      <article className="favorite-page">
+        <h1>no planets are favorited</h1>
+      </article>
+    )
+  } 
 
   return (
     <article className="favorite-page">
-      <section className='favorite-test'>
-        <h1>test planet #1</h1>
-        <button>remove planet</button>
-      </section>
-      
-      <fieldset>
-        <legend><h1>test planet #3</h1></legend>
-        <button>remove planet</button>
-      </fieldset>
+      {
+        favoriteList && favoriteList.map(planet => {
+          return <FavoriteplanetItem key={planet.id} planet={planet}/>
+        })
+      }
     </article>
   )
   
