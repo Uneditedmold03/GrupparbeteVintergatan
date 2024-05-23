@@ -165,3 +165,14 @@ p {
     text-align: center;
     justify-content: center;
 }
+
+.btn{
+    border-color: rgb(214, 214, 214);
+    color: azure;
+    background-color: #090931;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: #515151;
+}

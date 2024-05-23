@@ -24,11 +24,10 @@ function Planetdetails({ planetList }: Props) {
 
   return (
 
-
     <section className={`planetdetailsbackground`}>
 
       <article className="planetinfo">
-
+      <h1 className="text">{planet.name}</h1>
         <aside className="info-box-btn">
           <h1 className="text">{planet.name}</h1>
           <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
@@ -55,7 +54,6 @@ function Planetdetails({ planetList }: Props) {
         <hr />
         <br />
 
-
         <aside className="infobox">
           <h3 className="text">MÅNAR</h3>
           <h3></h3>
@@ -68,7 +66,6 @@ function Planetdetails({ planetList }: Props) {
       </article>
 
     </section >
-
 
   )
 }
