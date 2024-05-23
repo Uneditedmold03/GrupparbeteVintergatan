@@ -4,9 +4,10 @@ import Planet from "../../models/Planet"
 import { Link, useParams } from 'react-router-dom'
 
 type Props = {
-  planetList: Planet[]
-}
-function Planetdetails({ planetList }: Props) {
+  planetList: Planet[],
+  toggleFavoriteList: (id : number) => void
+}                                
+function Planetdetails({ planetList, toggleFavoriteList }: Props) {
   const [planet, setPlanet] = useState<Planet | null>(null)
   const { id } = useParams();
 
@@ -16,7 +17,7 @@ function Planetdetails({ planetList }: Props) {
       if (foundPlanet !== undefined) {
         setPlanet(foundPlanet)
       }
-
+      
     }
   }, [])
 
@@ -24,22 +25,25 @@ function Planetdetails({ planetList }: Props) {
 
   return (
 
+
     <section className={`planetdetailsbackground`}>
 
       <div className={`planetdetails planetdetails-${planet.name}`}>
 
         <article className="planetinfo">
-          {/* <h1 className="text">{planet.name}</h1> */}
           <aside className="info-box-btn">
             <h1 className="text">{planet.name}</h1>
-            <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+            <div>
+              <button onClick={() => toggleFavoriteList(planet.id)}>add to favorite</button>
+              <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+            </div>
           </aside>
-
           <h2 className="text">{planet.latinName}</h2>
           <p>{planet.desc}</p>
           <br />
           <hr />
           <br />
+
           <aside className="infobox">
             <h3 className="text">OMKRETS</h3>
             <h3 className="text">KM FRÅN SOLEN</h3>
@@ -56,6 +60,7 @@ function Planetdetails({ planetList }: Props) {
           <hr />
           <br />
 
+          
           <aside className="infobox">
             <h3 className="text">MÅNAR</h3>
             <h3></h3>
@@ -67,12 +72,12 @@ function Planetdetails({ planetList }: Props) {
 
         </article>
 
-        </div>
+      </div>
 
-    </section >
+    </section>
+
 
   )
 }
-
 
 export default Planetdetails;
