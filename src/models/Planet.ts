@@ -9,9 +9,12 @@ type Planet = {
     name: string,
     orbitalPeriod: number,
     rotation: number,
-    temp: { day: number,
-        night: number},
+    temp: {
+        day: number,
+        night: number
+    },
     type: string,
 }
 
 export default Planet;
+
