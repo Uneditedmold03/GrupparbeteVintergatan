@@ -15,9 +15,9 @@ function App() {
 
   useEffect(() => {
     axios.post('https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys')
-      .then(response => {
-        setKey(response.data.key)
-      })
+    .then(response => {
+      setKey(response.data.key)
+    })
   }, [])
 
   useEffect(() => {
