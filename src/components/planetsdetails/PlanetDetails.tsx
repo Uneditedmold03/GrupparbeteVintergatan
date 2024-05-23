@@ -4,9 +4,10 @@ import Planet from "../../models/Planet"
 import { Link, useParams } from 'react-router-dom'
 
 type Props = {
-  planetList: Planet[]
-}
-function Planetdetails({ planetList }: Props) {
+  planetList: Planet[],
+  toggleFavoriteList: (id : number) => void
+}                                
+function Planetdetails({ planetList, toggleFavoriteList }: Props) {
   const [planet, setPlanet] = useState<Planet | null>(null)
   const { id } = useParams();
 
@@ -32,7 +33,10 @@ function Planetdetails({ planetList }: Props) {
           {/* <h1 className="text">{planet.name}</h1> */}
           <aside className="info-box-btn">
             <h1 className="text">{planet.name}</h1>
-            <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+            <div>
+              <button onClick={() => toggleFavoriteList(planet.id)}>add to favorite</button>
+              <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+            </div>
           </aside>
 
           <h2 className="text">{planet.latinName}</h2>
