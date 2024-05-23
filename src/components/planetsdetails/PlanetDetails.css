@@ -141,13 +141,12 @@ p {
 
 .planetinfo {
     color: #dcdcdc;
-    padding-top: 6rem;
-    padding-left: 22rem;
-    padding-right: 20rem;
-    display:flex;
+    padding-top: 2.5rem;
+    margin: auto;
+    max-width: 45%;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
 }
 
