@@ -34,8 +34,8 @@ function Planetdetails({ planetList, toggleFavoriteList }: Props) {
           <aside className="info-box-btn">
             <h1 className="text">{planet.name}</h1>
             <div>
-              {/* <button onClick={() => toggleFavoriteList(planet.id)}>add to favorite</button>
-              <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link> */}
+              <button onClick={() => toggleFavoriteList(planet.id)}>add to favorite</button>
+              <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
             </div>
           </aside>
           <h2 className="text">{planet.latinName}</h2>

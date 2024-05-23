@@ -28,9 +28,9 @@ function Planets({ planets }: Props) {
             </article>
         </section>
 
-        {/* <footer className='footer'>
+        <footer className='footer'>
             <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
-        </footer> */}
+        </footer>
         </>
     )
 }
