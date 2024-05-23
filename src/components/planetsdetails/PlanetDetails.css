@@ -157,8 +157,8 @@ p {
 .planetinfo {
     color: #dcdcdc;
     padding-top: 6rem;
-    padding-left: 22rem;
-    padding-right: 20rem;
+    /* padding-left: 22rem;
+    padding-right: 20rem; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -26,44 +26,48 @@ function Planetdetails({ planetList }: Props) {
 
     <section className={`planetdetailsbackground`}>
 
-      <article className="planetinfo">
-      <h1 className="text">{planet.name}</h1>
-        <aside className="info-box-btn">
-          <h1 className="text">{planet.name}</h1>
-          <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
-        </aside>
+      <div className={`planetdetails planetdetails-${planet.name}`}>
 
-        <h2 className="text">{planet.latinName}</h2>
-        <p>{planet.desc}</p>
-        <br />
-        <hr />
-        <br />
-        <aside className="infobox">
-          <h3 className="text">OMKRETS</h3>
-          <h3 className="text">KM FRÅN SOLEN</h3>
-          <p>{planet.circumference} km</p>
-          <p>{planet.distance}</p>
+        <article className="planetinfo">
+          {/* <h1 className="text">{planet.name}</h1> */}
+          <aside className="info-box-btn">
+            <h1 className="text">{planet.name}</h1>
+            <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+          </aside>
 
-          <h3 className="text">MAX TEMPERATUR</h3>
-          <h3 className="text">MIN TEMPERATUR</h3>
-          <p>{planet.temp.day}</p>
-          <p>{planet.temp.night}</p>
-        </aside>
+          <h2 className="text">{planet.latinName}</h2>
+          <p>{planet.desc}</p>
+          <br />
+          <hr />
+          <br />
+          <aside className="infobox">
+            <h3 className="text">OMKRETS</h3>
+            <h3 className="text">KM FRÅN SOLEN</h3>
+            <p>{planet.circumference} km</p>
+            <p>{planet.distance}</p>
 
-        <br />
-        <hr />
-        <br />
+            <h3 className="text">MAX TEMPERATUR</h3>
+            <h3 className="text">MIN TEMPERATUR</h3>
+            <p>{planet.temp.day}</p>
+            <p>{planet.temp.night}</p>
+          </aside>
 
-        <aside className="infobox">
-          <h3 className="text">MÅNAR</h3>
-          <h3></h3>
-        </aside>
+          <br />
+          <hr />
+          <br />
 
-        <div className="moons">
-          <p>{planet.moons && planet.moons.length > 0 ? planet.moons.join(', ') : 'Har ingen måne'}</p>
+          <aside className="infobox">
+            <h3 className="text">MÅNAR</h3>
+            <h3></h3>
+          </aside>
+
+          <div className="moons">
+            <p>{planet.moons && planet.moons.length > 0 ? planet.moons.join(', ') : 'Har ingen måne'}</p>
+          </div>
+
+        </article>
+
         </div>
-
-      </article>
 
     </section >
 
