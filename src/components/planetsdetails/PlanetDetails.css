@@ -138,6 +138,11 @@ p {
     text-align: left; */
 }
 
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
 .info-box-btn{
     display: flex;
     justify-content: space-between;

@@ -8,7 +8,7 @@ type Props = {
   toggleFavoriteList: (id: number) => void
   favoriteList: Planet[],
 }
-function Planetdetails({ planetList,  favoriteList, toggleFavoriteList}: Props) {
+function Planetdetails({ planetList, favoriteList, toggleFavoriteList }: Props) {
   const [planet, setPlanet] = useState<Planet | null>(null)
   const { id } = useParams();
 
@@ -33,11 +33,14 @@ function Planetdetails({ planetList,  favoriteList, toggleFavoriteList}: Props) 
 
         <article className="planetinfo">
 
-        <Link to={'/'}><button className='front-page1'>←</button></Link>
-
+          <div className="buttons">
+            <Link to={'/'}><button className='front-page1'>←</button></Link>
+            <Link to={"/favorite/planets"}><button className="btn">Go to Favoriteplanets</button></Link>
+          </div>
+          
           <aside className="info-box-btn">
-            <h1 className="text">{planet.name }</h1>
-            
+            <h1 className="text">{planet.name}</h1>
+
 
             <div>
               <button className="btn" onClick={() => toggleFavoriteList(planet.id)}>{favoriteList.some(fp => fp.id === planet.id) ? 'Remove as Favorite' : 'Mark as Favorite'}</button>
