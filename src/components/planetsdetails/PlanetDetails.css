@@ -2,7 +2,7 @@
     /* background-color: yellow; */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #f0bb0fFF 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #f0bb0fFF 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -12,7 +12,7 @@
     /* background-color: rgb(160, 160, 160); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #85807dFF 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #85807dFF 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -23,7 +23,7 @@
     /* background-color: rgb(207, 153, 153); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #f7945aFF 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #f7945aFF 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -33,7 +33,7 @@
     /* background-color: rgb(23, 151, 255); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #2564D4FF 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #2564D4FF 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -43,7 +43,7 @@
     /* background-color: rgb(231, 49, 49); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #e24f14FF 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #e24f14FF 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -53,7 +53,7 @@
     /* background-color: rgb(227, 106, 25); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #d48253 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #d48253 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -63,7 +63,7 @@
     /* background-color: rgb(177, 145, 84); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #aa9068 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #aa9068 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -73,7 +73,7 @@
     /* background-color: rgb(134, 162, 179); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #4975a7 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #4975a7 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -83,7 +83,7 @@
     /* background-color: rgb(63, 99, 119); */
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(50% 100% at -10% 50%, #29517e 48%, #3068D000 57%);
+    background-image: radial-gradient(50% 100% at -10% 50%, #29517e 50%, #3068D000 57%);
     min-width: 100%;
     min-height: 100vh;
 
@@ -161,6 +161,18 @@ p {
     padding: 1rem 1.2rem;
     border-radius: 10px;
 }
+
+.front-page1{
+    border-color: rgb(214, 214, 214);
+    color: azure;
+    background-color: #090931;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: x-large;
+    margin-bottom: 1rem;
+}
+
 .btn:hover{
     background-color: #515151;
 }

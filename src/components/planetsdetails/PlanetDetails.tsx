@@ -5,9 +5,10 @@ import { Link, useParams } from 'react-router-dom'
 
 type Props = {
   planetList: Planet[],
-  toggleFavoriteList: (id : number) => void
-}                                
-function Planetdetails({ planetList, toggleFavoriteList }: Props) {
+  toggleFavoriteList: (id: number) => void
+  favoriteList: Planet[],
+}
+function Planetdetails({ planetList,  favoriteList, toggleFavoriteList}: Props) {
   const [planet, setPlanet] = useState<Planet | null>(null)
   const { id } = useParams();
 
@@ -17,7 +18,7 @@ function Planetdetails({ planetList, toggleFavoriteList }: Props) {
       if (foundPlanet !== undefined) {
         setPlanet(foundPlanet)
       }
-      
+
     }
   }, [])
 
@@ -31,13 +32,19 @@ function Planetdetails({ planetList, toggleFavoriteList }: Props) {
       <div className={`planetdetails planetdetails-${planet.name}`}>
 
         <article className="planetinfo">
+
+        <Link to={'/'}><button className='front-page1'>←</button></Link>
+
           <aside className="info-box-btn">
-            <h1 className="text">{planet.name}</h1>
+            <h1 className="text">{planet.name }</h1>
+            
+
             <div>
-              <button onClick={() => toggleFavoriteList(planet.id)}>add to favorite</button>
-              <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
+              <button className="btn" onClick={() => toggleFavoriteList(planet.id)}>{favoriteList.some(fp => fp.id === planet.id) ? 'Remove as Favorite' : 'Mark as Favorite'}</button>
             </div>
+
           </aside>
+
           <h2 className="text">{planet.latinName}</h2>
           <p>{planet.desc}</p>
           <br />
@@ -60,7 +67,7 @@ function Planetdetails({ planetList, toggleFavoriteList }: Props) {
           <hr />
           <br />
 
-          
+
           <aside className="infobox">
             <h3 className="text">MÅNAR</h3>
             <h3></h3>

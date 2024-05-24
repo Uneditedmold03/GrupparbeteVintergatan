@@ -50,7 +50,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Planets planets={planetList} />} />
         <Route path="/planet/details/:id" element={<Planetdetails 
-                                          planetList={planetList} 
+                                          planetList={planetList}
+                                          favoriteList={favoriteList} 
                                           toggleFavoriteList={toggleFavoriteList}/>} />
 
         <Route path="/favorite/planets" element={<Favoriteplanet favoriteList={favoriteList} 

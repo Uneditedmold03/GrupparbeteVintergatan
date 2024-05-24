@@ -11,11 +11,19 @@ type Props = {
 function FavoriteplanetItem({ planet, toggleFavoriteList }: Props) {
 
   return (
-    <fieldset>
-        <legend><h1>{planet.name}</h1></legend>
-        <button onClick={() => toggleFavoriteList(planet.id)}>remove planet</button>
-        <Link to={'/planet/details/' + planet.id}><button>read more</button></Link>
-      </fieldset>
+    // <fieldset>
+    //     <legend><h1>{planet.name}</h1></legend>
+    //     <button onClick={() => toggleFavoriteList(planet.id)}>remove planet</button>
+    //     <Link to={'/planet/details/' + planet.id}><button>read more</button></Link>
+    //   </fieldset>
+
+    <section className="fav-planet">
+      <h1 id="text1">{planet.name}</h1>
+      <button id="btn-toggle" onClick={() => toggleFavoriteList(planet.id)}>Remove planet</button>
+      <Link to={'/planet/details/' + planet.id}><button id="btn-readmore">Read more</button></Link>
+    </section>
+
+
   )
   
 }
