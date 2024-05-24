@@ -1,12 +1,13 @@
-.favorite-page{
+.favorite-page {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 
-.favorite-page1{
+.favorite-page1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -19,27 +20,31 @@
 }
 
 
-.favorite-test{
+.favorite-test {
     display: inline-block;
     border: 2px solid black;
     margin: 1rem;
     padding: 1rem;
 }
-fieldset{
+
+fieldset {
     margin: 1rem;
     padding: 1rem;
 }
 
-.fav-planet{
+.fav-planet {
     padding: 2rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 1rem;
     display: inline-block;
     border: 1px solid black;
     border-radius: 5px;
-    background-color:rgb(31, 23, 23)
+    background-color: rgb(159 159 159);
 }
 
-.front-page{
+.front-page {
     border-color: rgb(214, 214, 214);
     color: azure;
     background-color: #090931;
@@ -50,24 +55,43 @@ fieldset{
     font-size: x-large;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #515151;
 }
 
-#text1{
-    color: azure;
+#text1 {
+    font-size: xx-large;
     margin-bottom: 0.5rem;
 }
 
-#text2{
-   
+#text2 {
+    font-size: xx-large;
+    color: #d1d1cc;
 }
 
-
-#btn-toggle{
-    
+#backgroundnotfound{
+    background-image: url("./src/assets/star-transparent.png");
+    background-size: contain;
+    background-color: #090931;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
 }
 
-#btn-readmore{
-
+#btn-readmore {
+    margin-right: 0.5rem;
+    float: right;
+    FONT-WEIGHT: 800;
+    padding: 0.1rem;
+    background-color: #d1d1cc;
+    border-color: #d1d1cc;
 }
+
+#btn-toggle {
+    float: right;
+    FONT-WEIGHT: 800;
+    padding: 0.1rem;
+    background-color: #d1d1cc;
+    border-color: #d1d1cc;
+}
+

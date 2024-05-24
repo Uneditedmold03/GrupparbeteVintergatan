@@ -13,12 +13,12 @@ function Favoriteplanet({ favoriteList, toggleFavoriteList }: Props) {
 
   if (favoriteList.length == 0) {
     return (
-      <div>
+      <div id="backgroundnotfound">
 
         <Link to={'/'}><button className='front-page'>←</button></Link>
 
         <article className="favorite-page">
-            <h1 id="text2">No planets are favorited</h1>
+          <h1 id="text2">No planets are selected</h1>
         </article>
 
       </div>

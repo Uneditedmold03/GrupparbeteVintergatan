@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 type Props = {
   planet: Planet,
-  toggleFavoriteList: (id : number) => void
+  toggleFavoriteList: (id: number) => void
 }
 
 function FavoriteplanetItem({ planet, toggleFavoriteList }: Props) {
@@ -19,13 +19,19 @@ function FavoriteplanetItem({ planet, toggleFavoriteList }: Props) {
 
     <section className="fav-planet">
       <h1 id="text1">{planet.name}</h1>
+      <h2 className="text">{planet.latinName}</h2>
+      <p>{planet.desc}</p>
+      <br />
+      <hr />
+      <br />
+
       <button id="btn-toggle" onClick={() => toggleFavoriteList(planet.id)}>Remove planet</button>
       <Link to={'/planet/details/' + planet.id}><button id="btn-readmore">Read more</button></Link>
     </section>
 
 
   )
-  
+
 }
 
 export default FavoriteplanetItem;
