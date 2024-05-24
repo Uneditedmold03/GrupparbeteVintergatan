@@ -53,7 +53,8 @@ function App() {
                                           planetList={planetList} 
                                           toggleFavoriteList={toggleFavoriteList}/>} />
 
-        <Route path="/favorite/planets" element={<Favoriteplanet favoriteList={favoriteList} />} />
+        <Route path="/favorite/planets" element={<Favoriteplanet favoriteList={favoriteList} 
+                                                                 toggleFavoriteList={toggleFavoriteList}/>} />
       </Routes>
     </div>
   );

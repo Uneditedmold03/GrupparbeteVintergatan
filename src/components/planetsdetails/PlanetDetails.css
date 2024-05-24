@@ -154,18 +154,6 @@ p {
     justify-content: center;
 }
 
-.planetinfo {
-    color: #dcdcdc;
-    padding-top: 6rem;
-    /* padding-left: 22rem;
-    padding-right: 20rem; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-}
-
 .btn{
     border-color: rgb(214, 214, 214);
     color: azure;

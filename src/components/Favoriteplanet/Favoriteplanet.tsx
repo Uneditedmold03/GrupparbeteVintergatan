@@ -5,9 +5,10 @@ import FavoriteplanetItem from './FavoriteplanetItem'
 
 type Props = {
   favoriteList: Planet[]
+  toggleFavoriteList: (id : number) => void
 }
 
-function Favoriteplanet({ favoriteList }: Props) {
+function Favoriteplanet({ favoriteList, toggleFavoriteList }: Props) {
 
   if(favoriteList.length == 0){
     return(
@@ -19,9 +20,10 @@ function Favoriteplanet({ favoriteList }: Props) {
 
   return (
     <article className="favorite-page">
+      <h1><b>←↩</b></h1>
       {
         favoriteList && favoriteList.map(planet => {
-          return <FavoriteplanetItem key={planet.id} planet={planet}/>
+          return <FavoriteplanetItem key={planet.id} planet={planet} toggleFavoriteList={toggleFavoriteList}/>
         })
       }
     </article>
