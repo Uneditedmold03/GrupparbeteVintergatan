@@ -4,46 +4,74 @@
 }
 
 .planet-Solen {
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #f0bb0fFF 70%, #3068D000 90%);
     width: 23%;
+
 }
 
 .planet-Merkurius {
-    background-color: rgb(160, 160, 160);
+    /* background-color: rgb(160, 160, 160); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #85807dFF 50%, #3068D000 80%);
     width: 1.5%;
 }
 
 .planet-Venus {
-    background-color: rgb(207, 153, 153);
+    /* background-color: rgb(207, 153, 153); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #f7945aFF 50%, #3068D000 80%);
     width: 2.2%;
 }
 
 .planet-Jorden {
-    background-color: rgb(23, 151, 255);
+    /* background-color: rgb(23, 151, 255); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #2564D4FF 50%, #3068D000 80%);
     width: 4.5%;
 }
 
 .planet-Mars {
-    background-color: rgb(231, 49, 49);
+    /* background-color: rgb(231, 49, 49); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #e24f14FF 50%, #3068D000 80%);
     width: 3.6%;
 }
 
 .planet-Jupiter {
-    background-color: rgb(227, 106, 25);
+    /* background-color: rgb(227, 106, 25); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #d48253 50%, #3068D000 70%);
     width: 12%;
 }
 
 .planet-Saturnus {
-    background-color: rgb(177, 145, 84);
+    /* background-color: rgb(177, 145, 84); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #aa9068 50%, #3068D000 70%);
     width: 9.6%;
 }
 
 .planet-Uranus {
-    background-color: rgb(134, 162, 179);
+    /* background-color: rgb(134, 162, 179); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #4975a7 50%, #3068D000 70%);
     width: 8.4%;
 }
 
 .planet-Neptunus {
-    background-color: rgb(63, 99, 119);
+    /* background-color: rgb(63, 99, 119); */
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px;
+    background-image: radial-gradient(45% 45% at 50% 50%, #29517e 50%, #3068D000 70%);
     width: 7%;
 }
