@@ -16,9 +16,11 @@ function Planets({ planets }: Props) {
     }
 
     return (
-        <>
         <section className='backgrund'>
-            <h1 className='header-text'>{title}</h1>
+            <h1 className='link-text'><Link to={'/favorite/planets'} className='link-tagg'>Favorites:⭐</Link></h1>
+            <header className='header-nav'>
+                <h1 className='header-text'>{title}</h1>
+            </header>
             <article className='planet-list'>
                 {
                     planets.map(planet => {
@@ -27,11 +29,6 @@ function Planets({ planets }: Props) {
                 }
             </article>
         </section>
-
-        <footer className='footer'>
-            <Link to={'/favorite/planets'}><button className='btn'>Go to favorite planet</button></Link>
-        </footer>
-        </>
     )
 }
 
